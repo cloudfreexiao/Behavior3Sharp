@@ -11,7 +11,7 @@
 
 using System;
 
-namespace XIL.AI.Behavior3Sharp
+namespace Behavior3Sharp
 {
     public class MaxTime : Decorator
     {

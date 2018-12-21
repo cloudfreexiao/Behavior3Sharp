@@ -10,7 +10,7 @@
  **/
 
 
-namespace XIL.AI.Behavior3Sharp
+namespace Behavior3Sharp
 {
     public class MemPriority : Composite
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace XIL.AI.Behavior3Sharp
+namespace Behavior3Sharp
 {
     public enum B3Status
     {

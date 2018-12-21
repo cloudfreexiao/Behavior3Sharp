@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace XIL.AI.Behavior3Sharp
+namespace Behavior3Sharp
 {
     public class B3Functions
     {
@@ -12,7 +12,7 @@ namespace XIL.AI.Behavior3Sharp
 
         //public static BaseNode CreateBehavior3Instance<T>(string classname)
         //{
-        //    return CreateInstance<BaseNode>("Behavior3Sharp", "XIL.AI.Behavior3Sharp", classname);
+        //    return CreateInstance<BaseNode>("Behavior3Sharp", "Behavior3Sharp", classname);
         //}
 
         //private static T CreateInstance<T>(string asmname, string spacename, string classname)
