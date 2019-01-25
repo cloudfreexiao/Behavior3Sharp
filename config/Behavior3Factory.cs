@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using Newtonsoft.Json;
+using LitJson;
 
 
 namespace Behavior3Sharp
@@ -57,7 +57,7 @@ namespace Behavior3Sharp
             using (StreamReader reader = new StreamReader(path))
             {
                 string json = reader.ReadToEnd();
-                res = JsonConvert.DeserializeObject<Behavior3TreeCfg>(json);
+                JsonMapper.ToObject<Behavior3TreeCfg>(json);
             }
             return res;
         }
@@ -67,8 +67,7 @@ namespace Behavior3Sharp
             if (this.nodes.ContainsKey(classname))
             {
                 System.Type t = this.nodes[classname];
-                BaseNode nodes = Activator.CreateInstance(t) as BaseNode;
-                return nodes;
+                return Activator.CreateInstance(t) as BaseNode;
             }
             return null;
         }
